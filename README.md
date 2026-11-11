@@ -1,7 +1,5 @@
-<h1 align="center">Hi, I'm Ish Bedi 👋</h1>
 <p align="center">
-  <b>Electrical Engineering @ McMaster University</b> · Third Year · Co-op<br/>
-  Digital design, FPGAs, and embedded hardware
+  <img src="assets/banner.svg" alt="Ish Bedi: RTL Design, Design Verification, FPGA, Analog and PCB Design" width="100%"/>
 </p>
 
 <p align="center">
@@ -28,6 +26,19 @@
 | **[FPGA UART Communication Controller](https://github.com/IshBedi/FPGA-UART-ALU)** | UART TX/RX with 16x oversampling and framing-error detection, driving an 8-bit ALU over serial on a DE10-Lite | Verilog · Quartus · Icarus · GTKWave |
 | **[3D Spatial Mapping LiDAR](https://github.com/IshBedi/3D-Spatial-Mapping-LiDAR)** | Time-of-flight sensor on a stepper motor, bare-metal firmware on an Arm Cortex-M4F, 3D point cloud in Python | C · MSP432E401Y · I2C · UART · Python |
 
+### Hardware & analog design
+
+- ⚡ **48 V LV + Bus Board** (McMaster ExoSkeleton): 4 fused motor channels with shunt + INA228 current monitoring, buck to 5 V and LDO to 3.3 V, STM32 over I2C, CAN to the rest of the exoskeleton, 4-layer stack-up in Altium
+- 📈 **CMOS transimpedance amplifier** for a heartbeat sensor: MOSFET sizing and biasing in Xschem, DC / AC / transient simulation in ngspice, transistor-level layout in Magic, passing DRC and LVS
+
+---
+
+### How I verify
+
+<p align="center">
+  <img src="assets/testbench.svg" alt="Testbench log: every testbench passes" width="100%"/>
+</p>
+
 ---
 
 ### Tech I use
@@ -50,6 +61,9 @@
 ![ESP32](https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white)
 ![Altium](https://img.shields.io/badge/Altium_Designer-A5915F?style=flat-square&logo=altiumdesigner&logoColor=white)
 ![KiCad](https://img.shields.io/badge/KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white)
+![ngspice](https://img.shields.io/badge/ngspice-555555?style=flat-square)
+![Xschem](https://img.shields.io/badge/Xschem-555555?style=flat-square)
+![LTspice](https://img.shields.io/badge/LTspice-555555?style=flat-square)
 
 **Protocols:** UART · SPI · I2C · CAN · OBI
 
